@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='deck_stats_with_cards_and_trophy' inline='true' name='federated.04o87040hnns7f1h6lmdq1xik36u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='deck_stats_with_cards_and_trophy' name='textscan.0gy3orf18z05i710vv5kz0kcchoa'>
+            <connection class='textscan' directory='C:/MYDOWNLOADS/Coding/000 Scripts and Files/Personal/DataRoyaleFall2025' filename='deck_stats_with_cards_and_trophy.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[C0]' />
+            <value name='[C1]' />
+            <value name='[C2]' />
+            <value name='[C3]' />
+            <value name='[C4]' />
+            <value name='[C5]' />
+            <value name='[C6]' />
+            <value name='[C7]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c0]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c1]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c2]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c3]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c4]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c5]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c6]' />
+              <field name='[deck_stats_with_cards_and_trophy.csv].[c7]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0gy3orf18z05i710vv5kz0kcchoa' name='deck_stats_with_cards_and_trophy.csv' table='[deck_stats_with_cards_and_trophy#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='level_0' ordinal='0' />
+              <column datatype='integer' name='index' ordinal='1' />
+              <column datatype='string' name='c0' ordinal='2' />
+              <column datatype='string' name='c1' ordinal='3' />
+              <column datatype='string' name='c2' ordinal='4' />
+              <column datatype='string' name='c3' ordinal='5' />
+              <column datatype='string' name='c4' ordinal='6' />
+              <column datatype='string' name='c5' ordinal='7' />
+              <column datatype='string' name='c6' ordinal='8' />
+              <column datatype='string' name='c7' ordinal='9' />
+              <column datatype='string' name='trophy_band' ordinal='10' />
+              <column datatype='integer' name='wins' ordinal='11' />
+              <column datatype='integer' name='losses' ordinal='12' />
+              <column datatype='integer' name='total' ordinal='13' />
+              <column datatype='real' name='win_rate' ordinal='14' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>level_0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[level_0]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>level_0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trophy_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trophy_band]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>trophy_band</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wins]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>wins</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[losses]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>losses</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>total</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[win_rate]</local-name>
+            <parent-name>[deck_stats_with_cards_and_trophy.csv]</parent-name>
+            <remote-alias>win_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Matches All Decks' datatype='integer' name='[Calculation_435160320055910400]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED : SUM([total])}' />
+      </column>
+      <column caption='Card Matches' datatype='integer' name='[Calculation_435160320056172545]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Pivot Field Values] : SUM([total])}' />
+      </column>
+      <column caption='Usage Rate' datatype='real' name='[Calculation_435160320056340482]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_435160320056172545] / [Calculation_435160320055910400]' />
+      </column>
+      <column caption='Slot' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Card' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+      <column caption='deck_stats_with_cards_and_trophy.csv' datatype='table' name='[__tableau_internal_object_id__].[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]' role='measure' type='quantitative' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Level 0' datatype='integer' name='[level_0]' role='measure' type='quantitative' />
+      <column caption='Losses' datatype='integer' name='[losses]' role='measure' type='quantitative' />
+      <column caption='Total' datatype='integer' name='[total]' role='measure' type='quantitative' />
+      <column caption='Trophy Band' datatype='string' name='[trophy_band]' role='dimension' type='nominal' />
+      <column caption='Win Rate' datatype='real' name='[win_rate]' role='measure' type='quantitative' />
+      <column caption='Wins' datatype='integer' name='[wins]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/k0zen/AppData/Local/Temp/TableauTemp/#TableauTemp_0y8u5qj11snvb71cpy6d01jo8a69.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2025 02:39:36 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>level_0</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[level_0]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>level_0</remote-alias>
+              <ordinal>0</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>315043</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>index</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>index</remote-alias>
+              <ordinal>1</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>315043</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trophy_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trophy_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trophy_band</remote-alias>
+              <ordinal>2</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wins</remote-alias>
+              <ordinal>3</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>991</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>losses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[losses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>losses</remote-alias>
+              <ordinal>4</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1200</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total</remote-alias>
+              <ordinal>5</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1594</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>win_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[win_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>win_rate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>deck_stats_with_cards_and_trophy.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6209</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='deck_stats_with_cards_and_trophy.csv' id='deck_stats_with_cards_and_trophy.csv_A3050BA7341444CCA64247656DDE6858'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[C0]' />
+                  <value name='[C1]' />
+                  <value name='[C2]' />
+                  <value name='[C3]' />
+                  <value name='[C4]' />
+                  <value name='[C5]' />
+                  <value name='[C6]' />
+                  <value name='[C7]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c0]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c1]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c2]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c3]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c4]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c5]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c6]' />
+                    <field name='[deck_stats_with_cards_and_trophy.csv].[c7]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0gy3orf18z05i710vv5kz0kcchoa' name='deck_stats_with_cards_and_trophy.csv' table='[deck_stats_with_cards_and_trophy#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='level_0' ordinal='0' />
+                    <column datatype='integer' name='index' ordinal='1' />
+                    <column datatype='string' name='c0' ordinal='2' />
+                    <column datatype='string' name='c1' ordinal='3' />
+                    <column datatype='string' name='c2' ordinal='4' />
+                    <column datatype='string' name='c3' ordinal='5' />
+                    <column datatype='string' name='c4' ordinal='6' />
+                    <column datatype='string' name='c5' ordinal='7' />
+                    <column datatype='string' name='c6' ordinal='8' />
+                    <column datatype='string' name='c7' ordinal='9' />
+                    <column datatype='string' name='trophy_band' ordinal='10' />
+                    <column datatype='integer' name='wins' ordinal='11' />
+                    <column datatype='integer' name='losses' ordinal='12' />
+                    <column datatype='integer' name='total' ordinal='13' />
+                    <column datatype='real' name='win_rate' ordinal='14' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='deck_stats_with_cards_and_trophy' name='federated.04o87040hnns7f1h6lmdq1xik36u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04o87040hnns7f1h6lmdq1xik36u'>
+            <column caption='Total Matches All Decks' datatype='integer' name='[Calculation_435160320055910400]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED : SUM([total])}' />
+            </column>
+            <column caption='Card Matches' datatype='integer' name='[Calculation_435160320056172545]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Pivot Field Values] : SUM([total])}' />
+            </column>
+            <column caption='Usage Rate' datatype='real' name='[Calculation_435160320056340482]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_435160320056172545] / [Calculation_435160320055910400]' />
+            </column>
+            <column caption='Card' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_435160320056340482]' derivation='Sum' name='[sum:Calculation_435160320056340482:qk]' pivot='key' type='quantitative' />
+            <column caption='Total' datatype='integer' name='[total]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04o87040hnns7f1h6lmdq1xik36u].[none:Pivot Field Values:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04o87040hnns7f1h6lmdq1xik36u].[sum:Calculation_435160320056340482:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04o87040hnns7f1h6lmdq1xik36u].[none:Pivot Field Values:nk]</rows>
+        <cols>[federated.04o87040hnns7f1h6lmdq1xik36u].[sum:Calculation_435160320056340482:qk]</cols>
+      </table>
+      <simple-id uuid='{76B56C0D-3E36-4BF6-843D-BB8592000EA6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04o87040hnns7f1h6lmdq1xik36u].[none:Pivot Field Values:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{49FC63E6-C39B-423F-82F9-C52BD35B0B24}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
